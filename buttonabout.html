@@ -27,7 +27,8 @@
       --orange-accent:#9e4102;
       --yellow:#f1c40f;
       --yellow-accent:#bd9a0c;
-      --dark-mode-background: #000000;
+      --dark-mode-background: #191919;
+      --transparent: transparent;
     }
 
     button {
@@ -240,15 +241,23 @@
       font-size: 18px;
     }
     
+   .button-container {
+    background-color: transparent;
+    background-color: var(--dark-mode-background);
+    }
+  
     body {
-        background-color: transparent;
-      }
+    background-color: transparent;
+    background-color: var(--dark-mode-background);
+    }
   </style>
 </head>
 
 <body>
 
-  <button class="btn large my-color rounded " type="button" onclick="navigate()">Learn More</button>
+  <div class="button-container">
+    <button class="btn large my-color rounded " type="button" onclick="navigate()">Learn More</button>
+  </div>
   
   <script>
     function navigate() {
