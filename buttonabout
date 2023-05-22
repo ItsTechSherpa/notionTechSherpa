@@ -248,11 +248,11 @@
 
 <body>
 
-  <button class="btn large my-color rounded " type="button" onclick="navigate()">Enter The CryptoPedia</button>
+  <button class="btn large my-color rounded " type="button" onclick="navigate()">Learn More</button>
   
   <script>
     function navigate() {
-      window.open("https://techsherpa.simple.ink/f4253ae90d824d5ca0200ac89acf1200", '_parent').focus();
+      window.open("https://techsherpa.simple.ink/8121e4ea3e0241cda9f0b2c3884cf627", '_parent').focus();
     }
   </script>
 
