@@ -31,7 +31,7 @@
     }
 
     button {
-      background: var(--dark-mode-background);
+      background: none;
       color: inherit;
       border: 2px solid #FFFFF;
       padding: 0;
@@ -239,18 +239,11 @@
       padding: 15px 60px;
       font-size: 18px;
     }
+    
+    body {
+        background-color: transparent;
+      }
   </style>
-  
-  <script>
-    function applyButtonStyles() {
-      const button = document.querySelector('.btn');
-      const darkModeBackground = getComputedStyle(document.documentElement).getPropertyValue('--dark-mode-background');
-      button.style.backgroundColor = darkModeBackground;
-    }
-
-    document.addEventListener('DOMContentLoaded', applyButtonStyles);
-  </script>
-
 </head>
 
 <body>
