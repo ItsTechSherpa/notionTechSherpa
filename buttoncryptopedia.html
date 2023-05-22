@@ -5,7 +5,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-  <style>
+ <style>
     :root {
       --my-color:#123c5d;
       --my-color-accent:#175e94;
@@ -27,7 +27,8 @@
       --orange-accent:#9e4102;
       --yellow:#f1c40f;
       --yellow-accent:#bd9a0c;
-      --dark-mode-background: #000000;
+      --dark-mode-background: #191919;
+      --transparent: transparent;
     }
 
     button {
@@ -240,15 +241,21 @@
       font-size: 18px;
     }
     
+    .button-container {
+    background-color: transparent;
+    background-color: var(--dark-mode-background);
+    }
+  
     body {
-        background-color: transparent;
-      }
-  </style>
+    background-color: transparent;
+    background-color: var(--dark-mode-background);
+    }
 </head>
 
 <body>
-
-  <button class="btn large my-color rounded " type="button" onclick="navigate()">Enter The CryptoPedia</button>
+   <div class="button-container">
+      <button class="btn large my-color rounded " type="button" onclick="navigate()">Enter The CryptoPedia</button>
+   </div>
   
   <script>
     function navigate() {
