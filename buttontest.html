@@ -240,6 +240,16 @@
       font-size: 18px;
     }
   </style>
+  
+  <script>
+    function applyButtonStyles() {
+      const button = document.querySelector('.btn');
+      const darkModeBackground = getComputedStyle(document.documentElement).getPropertyValue('--dark-mode-background');
+      button.style.backgroundColor = darkModeBackground;
+    }
+
+    document.addEventListener('DOMContentLoaded', applyButtonStyles);
+  </script>
 
 </head>
 
